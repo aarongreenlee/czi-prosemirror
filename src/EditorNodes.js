@@ -6,9 +6,8 @@ import BulletListNodeSpec from './BulletListNodeSpec';
 import ImageNodeSpec from './ImageNodeSpec';
 import ListItemNodeSpec from './ListItemNodeSpec';
 import OrderedListNodeSpec from './OrderedListNodeSpec';
-import {schema} from 'prosemirror-schema-basic';
-
 import TableNodesSpecs from './TableNodesSpecs';
+import {schema} from 'prosemirror-schema-basic';
 
 const {
   BULLET_LIST,

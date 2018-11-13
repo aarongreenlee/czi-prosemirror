@@ -14,10 +14,15 @@ const STYLE_BACKGROUND_COLOR = {
   backgroundColor: '#e8e87d',
 };
 
+const STYLE_UNDERLINE = {
+  textDecoration: 'underline',
+};
+
 const STYLE_MIXED = {
-  ...STYLE_COLOR,
-  ...STYLE_BACKGROUND_COLOR,
   ...STLE_BOLD,
+  ...STYLE_BACKGROUND_COLOR,
+  ...STYLE_COLOR,
+  ...STYLE_UNDERLINE,
 };
 
 class DemoAppHTMLTemplate extends React.PureComponent<any, any, any> {
@@ -34,12 +39,14 @@ class DemoAppHTMLTemplate extends React.PureComponent<any, any, any> {
         </table>
         <h3>H3 Header</h3>
         <p>
-          It will be seen that this mere painstaking burrower and grub-worm of a
+          It will be seen <u>that this mere painstaking</u> burrower and grub-worm of a
           poor devil of a Sub-Sub appears to have gone through the long Vaticans
           and street-stalls of the earth, picking up whatever random allusions to
           whales he could anyways find in any book whatsoever, sacred or profane.
           Therefore you must not, in every case at least, take the
+          <span style={STYLE_UNDERLINE}>
           higgledy-piggledy whale statements, however authentic, in these
+          </span>
           extracts, for veritable gospel cetology. Far from it. As touching the
           ancient authors generally, as well as the poets here appearing, these
           extracts are solely valuable or entertaining, as affording a glancing

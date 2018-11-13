@@ -46,6 +46,7 @@ const {
   TEXT_COLOR,
   TEXT_HIGHLIGHT,
   UL,
+  UNDERLINE,
 } = EditorCommands;
 
 const CommandGroups = [
@@ -64,6 +65,7 @@ const CommandGroups = [
   {
     'Color': TEXT_COLOR,
     'Highlight': TEXT_HIGHLIGHT,
+    'Underline': UNDERLINE,
   },
   {
     'Link': LINK_SET_URL,

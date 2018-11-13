@@ -15,6 +15,7 @@ import TableCellColorCommand from './TableCellColorCommand';
 import TableInsertCommand from './TableInsertCommand';
 import TextColorCommand from './TextColorCommand';
 import TextHighlightCommand from './TextHighlightCommand';
+import UnderlineCommand from './UnderlineCommand';
 import createCommand from './createCommand';
 import {baseKeymap} from 'prosemirror-commands';
 
@@ -83,3 +84,4 @@ export const TABLE_TOGGLE_HEADER_ROW = createCommand(toggleHeaderRow);
 export const TEXT_COLOR = new TextColorCommand();
 export const TEXT_HIGHLIGHT = new TextHighlightCommand();
 export const UL = new ListToggleCommand(false);
+export const UNDERLINE = new UnderlineCommand();
